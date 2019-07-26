@@ -11,6 +11,9 @@ sudo -- sh -c 'apt-get update; apt-get upgrade -y; apt-get dist-upgrade -y; apt-
 echo "deb https://download.webmin.com/download/repository sarge contrib" | sudo tee -a /etc/apt/sources.list
 sudo -- sh -c 'cd /root; wget http://www.webmin.com/jcameron-key.asc; apt-key add jcameron-key.asc; apt-get install apt-transport-https; apt-get update; apt-get install webmin -y'
 
+#to (re)start webmin
+sudo /etc/init.d/webmin restart
+
 #nginx
 sudo apt-get install nginx -y
 #webmin nginx module https://www.justindhoffman.com/project/nginx-webmin-module
