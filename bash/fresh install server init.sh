@@ -23,6 +23,7 @@ sudo apt-get install libhtml-parser-perl -y
 
 #certbot
 sudo apt-get install certbot -y
+sudo apt-get install python-certbot-nginx
 sudo certbot nginx
 
 #nodejs
