@@ -11,6 +11,12 @@ sudo -- sh -c 'apt-get update; apt-get upgrade -y; apt-get dist-upgrade -y; apt-
 echo "deb https://download.webmin.com/download/repository sarge contrib" | sudo tee -a /etc/apt/sources.list
 sudo -- sh -c 'cd /root; wget http://www.webmin.com/jcameron-key.asc; apt-key add jcameron-key.asc; apt-get install apt-transport-https; apt-get update; apt-get install webmin -y'
 
+#webmin official https://doxfer.webmin.com/Webmin/Installation#apt_.28Debian.2FUbuntu.2FMint.29
+wget -qO - http://www.webmin.com/jcameron-key.asc | sudo apt-key add -
+sudo sh -c 'echo "deb http://download.webmin.com/download/repository sarge contrib" > /etc/apt/sources.list.d/webmin.list'
+sudo apt update
+sudo apt install webmin
+
 #to (re)start webmin
 sudo /etc/init.d/webmin restart
 
