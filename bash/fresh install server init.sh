@@ -51,3 +51,6 @@ sudo apt install php php-cli php-fpm php-json php-mysql php-zip php-gd  php-mbst
 
 #docker
 curl -fsSL https://get.docker.com | sh
+
+#CIFS installation (for backups/mounting nas drives)
+sudo apt-get install cifs-utils
