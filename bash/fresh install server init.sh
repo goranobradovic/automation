@@ -49,4 +49,5 @@ cat /sys/class/thermal/thermal_zone0/temp
 #php
 sudo apt install php php-cli php-fpm php-json php-mysql php-zip php-gd  php-mbstring php-curl php-xml php-pear php-bcmath
 
-
+#docker
+curl -fsSL https://get.docker.com | sh
