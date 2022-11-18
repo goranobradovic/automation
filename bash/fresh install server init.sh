@@ -54,3 +54,6 @@ curl -fsSL https://get.docker.com | sh
 
 #CIFS installation (for backups/mounting nas drives)
 sudo apt-get install cifs-utils
+
+#import database
+mysql -u username -p dbname < data-dump.sql
