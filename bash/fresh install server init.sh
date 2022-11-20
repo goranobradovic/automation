@@ -52,6 +52,9 @@ sudo apt install php php-cli php-fpm php-json php-mysql php-zip php-gd  php-mbst
 #docker
 curl -fsSL https://get.docker.com | sh
 
+#for docker macvlans need to install these kernel extras
+sudo apt install linux-modules-extra-raspi
+
 #CIFS installation (for backups/mounting nas drives)
 sudo apt-get install cifs-utils
 
